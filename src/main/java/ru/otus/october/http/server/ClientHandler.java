@@ -8,7 +8,6 @@ public class ClientHandler implements Runnable {
     private Socket socket;
     private Dispatcher dispatcher;
 
-
     public ClientHandler(HttpServer server, Socket socket) {
         this.server = server;
         this.socket = socket;
@@ -27,7 +26,7 @@ public class ClientHandler implements Runnable {
                 request.info(true);
                 dispatcher.execute(request, socket.getOutputStream());
             }
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
