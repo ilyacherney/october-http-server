@@ -1,0 +1,116 @@
+DEBUG 2024-10-26 11:36:21 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:27) - Сервер запущен на порту: 8189
+INFO  2024-10-26 11:38:39 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+INFO  2024-10-26 11:41:41 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+DEBUG 2024-10-26 11:41:53 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:72) - GET /calculator?a=1&b=2 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+
+
+INFO  2024-10-26 11:41:53 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:73) - Method: GET
+INFO  2024-10-26 11:41:53 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:74) - URI: /calculator
+INFO  2024-10-26 11:41:53 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:75) - Parameters: {a=1, b=2}
+INFO  2024-10-26 11:41:53 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:76) - Body: null
+INFO  2024-10-26 11:42:42 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+DEBUG 2024-10-26 11:42:44 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:72) - GET /calculator?a=1&b=2 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+
+
+INFO  2024-10-26 11:42:44 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:73) - Method: GET
+INFO  2024-10-26 11:42:44 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:74) - URI: /calculator
+INFO  2024-10-26 11:42:44 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:75) - Parameters: {a=1, b=2}
+INFO  2024-10-26 11:42:44 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:76) - Body: null
+INFO  2024-10-26 11:42:55 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+DEBUG 2024-10-26 11:42:59 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:72) - GET /calculator?a=1&b=3 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+
+
+INFO  2024-10-26 11:42:59 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:73) - Method: GET
+INFO  2024-10-26 11:42:59 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:74) - URI: /calculator
+INFO  2024-10-26 11:42:59 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:75) - Parameters: {a=1, b=3}
+INFO  2024-10-26 11:42:59 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:76) - Body: null
+INFO  2024-10-26 11:43:54 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+INFO  2024-10-26 11:44:18 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+DEBUG 2024-10-26 11:44:22 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:72) - GET /calculator?a=1&b=3 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+
+
+INFO  2024-10-26 11:44:22 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:73) - Method: GET
+INFO  2024-10-26 11:44:22 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:74) - URI: /calculator
+INFO  2024-10-26 11:44:22 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:75) - Parameters: {a=1, b=3}
+INFO  2024-10-26 11:44:22 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:76) - Body: null
+INFO  2024-10-26 11:46:36 [main] ru.otus.october.http.server.HttpServer (HttpServer.java:26) - Сервер запущен на порту: 8189
+DEBUG 2024-10-26 11:46:43 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:72) - GET /calculator?a=1&b=3 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+
+
+INFO  2024-10-26 11:46:43 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:73) - Method: GET
+INFO  2024-10-26 11:46:43 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:74) - URI: /calculator
+INFO  2024-10-26 11:46:43 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:75) - Parameters: {a=1, b=3}
+INFO  2024-10-26 11:46:43 [main] ru.otus.october.http.server.HttpRequest (HttpRequest.java:76) - Body: null
