@@ -19,7 +19,6 @@ public class ClientHandler implements Runnable {
     public void run() {
         try {
             while (true) {
-                Thread.sleep(5000);
                 byte[] buffer = new byte[8192];
                 int n = 0;
                 n = socket.getInputStream().read(buffer);
