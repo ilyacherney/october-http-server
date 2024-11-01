@@ -1,7 +1,9 @@
 package ru.otus.october.http.server;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.*;
 
 public class HttpRequest {
     private String rawRequest;
@@ -10,6 +12,8 @@ public class HttpRequest {
     private Map<String, String> parameters;
     private String body;
     private Exception exception;
+    private static final Logger LOGGER = LogManager.getLogger(HttpRequest.class.getName());
+    private Map<String, String> headers;
 
     public Exception getException() {
         return exception;
@@ -34,6 +38,7 @@ public class HttpRequest {
     public HttpRequest(String rawRequest) {
         this.rawRequest = rawRequest;
         this.parse();
+        parseHeaders();
     }
 
     public String getParameter(String key) {
@@ -64,13 +69,29 @@ public class HttpRequest {
         }
     }
 
-    public void info(boolean debug) {
-        if (debug) {
-            System.out.println(rawRequest);
+    private void parseHeaders() {
+        String rawHeaders = rawRequest.substring(rawRequest.indexOf("\r\n") + 2); // Пропустим первую строку запроса
+        String[] lines = rawHeaders.split("\r\n"); // Разделяем на строки по разделителю строк
+
+        headers = new HashMap<>();
+        for (String line : lines) {
+            int index = line.indexOf(": ");
+            if (index != -1) {
+                String key = line.substring(0, index).trim(); // Заголовок (до ": ")
+                String value = line.substring(index + 2).trim(); // Значение (после ": ")
+                headers.put(key, value);
+            }
         }
-        System.out.println("Method: " + method);
-        System.out.println("URI: " + uri);
-        System.out.println("Parameters: " + parameters);
-        System.out.println("Body: "  + body);
+
+        LOGGER.debug("Accept-Encoding: " + headers.get("Accept-Encoding"));
+        LOGGER.debug("Connection: " + headers.get("Connection"));
+    }
+
+    public void info() {
+        LOGGER.debug(rawRequest);
+        LOGGER.info("Method: " + method);
+        LOGGER.info("URI: " + uri);
+        LOGGER.info("Parameters: " + parameters);
+        LOGGER.info("Body: "  + body);
     }
 }
